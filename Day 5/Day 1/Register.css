@@ -1,0 +1,136 @@
+/* Login.css */
+
+.reg-container {
+    margin: 0;
+    height: 100%;
+    padding: 0%;
+    overflow: hidden;
+    background-image: url('/Users/ujjual/Documents/React/app-dev/src/assets/images/party.avif'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+  }
+  
+  .reg-fieldset-container {
+    background-color: black;
+    max-width: 400px;
+    padding: 70px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: -60px;
+  }
+
+  .reg-title {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #ff9900;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 0px;
+    width:30vh;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+
+  .reg-but{
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(205,140,13);
+    background: linear-gradient(90deg, rgba(205,140,13,1) 28%, rgba(201,31,27,1) 72%, rgba(111,33,143,1) 100%);
+  }
+
+  .reg-don {
+    /* Your default styles here */
+    background-color: #3b80b4;  
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .reg-don:hover {
+    background-color: #d3d6d7;
+  }
+
+  .reg-forgot-password {
+    text-align: right;
+    margin-top:1px;
+    transform: translateX(-60px);
+
+  }
+  
+  .reg-forgot-password a {
+    color: #ff9900; /* Link color */
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .reg-forgot-password a:hover {
+    text-decoration: underline;
+  }
+  .reg-logon{
+    height: 100px;
+    margin-bottom: 485px;
+    transform: translateX(225px);
+    width:140px;
+    background-color: rgb(114, 14, 106);
+  }
+  .reg-dont{
+    font-size:large;
+    font-weight: bold;
+  }
+  .reg-error {
+    color: red;
+    font-size: 12px; /* Adjust the font size as needed */
+    margin-top: 4px; /* Adjust the margin as needed */
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 130%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup-card {
+    background: #fff;
+    padding: 40px; /* Increase padding for a bigger card */
+    border-radius: 10px; /* Increase border-radius for rounded corners */
+    text-align: center;
+    max-width: 80%;
+    margin-left: -45vh;
+    transform: translateY(-15vh);
+    font-size: 20px;
+  }
+  
+  .popup-card.success {
+    background: green;
+    color: white;
+  }
