@@ -1,0 +1,168 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    /* color: rgb(165, 117, 165); */
+    padding: -10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .logout:hover {
+    color: #ff0000; /* Color on hover (red) */
+  }
+.navv-link{
+  margin-top: 100vh;
+}
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-size:x-large;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 2px;
+    margin: 0 30px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffc107;
+  }
+
+  .navbar {
+    background-color: transparent; /* Set the initial background color */
+    transition: background-color 0.3s ease-in-out;
+    position: absolute;
+  }
+  
+  .navbar:hover {
+    background-color: purple; /* Set the background color on hover */
+  }
+  
+  /* Rest of your existing styles */
+  
+  
+  
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  
+    .bar.open:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .bar.open:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .bar.open:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  
+    .bar.open:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .bar.open:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .bar.open:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+.logo-image{
+    width: 190px;
+    height: 100px;
+    margin-top: 10px;   
+    transform: translateX(-30px);
+}
+  
